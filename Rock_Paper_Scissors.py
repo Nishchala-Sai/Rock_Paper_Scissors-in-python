@@ -8,7 +8,7 @@ i=1
 while(player_score !=3 and computer_score!=3):
     chosen= random.choice(opponent_choices)
     user_choice= input("Enter choice: ")
-    beaten={"rock":"scissors","paper":"scissors","scissors":"paper"}
+    beaten={"rock":"scissors","paper":"rock","scissors":"paper"}
     if(beaten[user_choice.lower()]==chosen):
         print(f"Player WON this Round{i}")
         player_score+=1
